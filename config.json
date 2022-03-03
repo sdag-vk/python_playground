@@ -1,0 +1,13 @@
+{
+    "listenIP": "1.0.0.0",
+    "listenPort": 80,
+    "databaseFile": "recordings.db",
+    "soundFileLocation": "static/wav",
+    "soundFileSuffix": ".wav",
+    "locale": {
+        "navDashboardTitle": "dashboard",
+        "navRecordingsTitle": "recordings"
+    },
+    "outboundIdentification": "031300",
+    "debug": false
+}
