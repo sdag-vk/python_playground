@@ -12,8 +12,8 @@ class Configuration():
         self.databaseFile =             data.get('databaseFile', "recordings.db")
         self.soundFileLocation =        data.get('soundFileLocation', "static/wav")
         self.soundFileSuffix =          data.get('soundFileSuffix', ".wav")
-        self.navDashboardTitle =        data.get('navDashboardTitle', "dashboard")
-        self.navRecordingsTitle =       data.get('navRecordingsTitle', "recordings")
+        self.navDashboardTitle =        data.get('locale', {}).get("navDashboardTitle", "dashboard")
+        self.navRecordingsTitle =       data.get('locale', {}).get('navRecordingsTitle', "recordings")
         self.outboundIdentification =   data.get('outboundIdentification', "031")
         self.debug =                    data.get('debug', False)
         pass
@@ -21,5 +21,3 @@ class Configuration():
     def __init__(self) -> None:
         self.parseConfig()
         pass
-
-config = Configuration()
